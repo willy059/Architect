@@ -13,9 +13,9 @@ function set_software_list() {
 
     desktop_list=(
         ["Discord"]="discord"
+	["Easyeffects"]="easyeffects calf lsp-plugings-lv2"
         ["Telegram"]="telegram-desktop"
         ["Spotify"]="spotify"
-        ["LibreOffice en"]="libreoffice-fresh"
         ["LibreOffice fr"]="libreoffice-fresh libreoffice-fresh-fr"
         ["OnlyOffice"]="onlyoffice-bin"
         ["Audacity"]="audacity"
@@ -30,6 +30,7 @@ function set_software_list() {
     system_list=(
         ["Open RGB"]="openrgb"
         ["Arch Update"]="arch-update"
+	["Willy's system"]="gparted gnome-logs pamac-aur aic94xx-firmware ast-firmware linux-firmware-qlogic upd72020x-fw wd719x-firmware papirus-icon-theme drawing vlc extension-manager resources gnome-shell-extension-caffeine gnome-shell-extension-appindicator libadwaita-without-adwaita htop gnome-shell-extension-dash-to-dock gnome-shell teamviewer"
     )
 
     picture_list=(
