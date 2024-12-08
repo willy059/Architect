@@ -15,6 +15,7 @@ function install_gnome() {
         gnome-text-editor
         gnome-themes-extra
         gnome-browser-connector
+        gnome-boxes
         adwaita-icon-theme
         loupe
         evince
@@ -28,16 +29,15 @@ function install_gnome() {
         nautilus
         nautilus-sendto
         sushi
-        totem
         xdg-user-dirs-gtk
         adw-gtk3
-        snapshot
         qt6-wayland
     "
 
     install_lst "${inlst}"
 
     exec_log "gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3" "$(eval_gettext "Setting gtk theme to adw-gtk3")"
+    exec_log "gsettings set org.gnome.settings-daemon.plugins.media-keys volume-step 2" "$(eval_gettext "Setting volume step = 2")"
     exec_log "gsettings set org.gnome.desktop.peripherals.keyboard numlock-state true" "$(eval_gettext "Enabling numlock on startup")"
     exec_log "sudo ln -s /dev/null /etc/udev/rules.d/61-gdm.rules" "$(eval_gettext "Disable GDM rules to unlock Wayland")"
 }
