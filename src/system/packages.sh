@@ -48,7 +48,7 @@ function usefull_package() {
     "
 
     if [[ ${BTRFS} == true ]]; then
-        inlst+=" btrfs-progs btrfs-assistant btrfs-du btrfsmaintenance"
+        inlst+=" btrfs-progs btrfs-assistant btrfs-du btrfsmaintenance snapper-git"
     fi
 
     install_lst "${inlst}"
