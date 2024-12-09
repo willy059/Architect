@@ -30,7 +30,7 @@ function install_gnome() {
         sushi
         totem
         xdg-user-dirs-gtk
-        adw-gtk3
+        adw-gtk-theme
         snapshot
         qt6-wayland
     "
